@@ -1,0 +1,21 @@
+html, body {
+  color: #000;
+  text-align: center;
+}
+main {
+  margin: 10px;
+}
+.sliders {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+.sliders p {
+  width: 18vw;
+}
+.sliders input {
+  width: 18vw;
+}
+canvas {
+  display: inline;
+}

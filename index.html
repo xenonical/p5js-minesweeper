@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <br>
+      p5.js minesweeper clone, pretty self explanatory. hold "f" when clicking on a tile to place a flag, controls are otherwise as you'd expect.
+      <div class="sliders">
+        <p>width: <span id="dWidth"></span></p>
+        <p>height: <span id="dHeight"></span></p>
+        <p>mines: <span id="numMines"></span> (<span id="dMines"></span>%)</p>
+      </div>
+      <div class="sliders">
+        <input type="range" min="1" max="50" value="16" class="slider" id="width">
+        <input type="range" min="1" max="50" value="16" class="slider" id="height">
+        <input type="range" min="1" max="99" value="16" class="slider" id="mines">
+      </div>
+      <p>time: <span id="clock"></span>s <button onclick="initTiles()">new game</button> mines left: <span id="minesLeft"></span></p>
+    </main>
+    <script src="minesweeper.js"></script>
+     
+  </body>
+</html>
