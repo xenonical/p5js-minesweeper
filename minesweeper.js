@@ -132,10 +132,12 @@ function drawCursor() {
 function mouseClicked() {
   let t = field.find(tile => tile.x==cursorX&&tile.y==cursorY);
   // flags/unflags tiles
-  if(keyIsDown(70)) {
+  if(keyIsDown(70)&&gameState==0) {
     if(t.isFlagged||!t.isCovered) {
       t.isFlagged = false;
-      numFlags--;
+      if(t.isCovered) {
+        numFlags--;
+      }
     }
     else {
       t.isFlagged = true;
